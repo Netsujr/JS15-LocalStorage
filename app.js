@@ -24,9 +24,11 @@ function populateList(plates = [], platesList) {
     return `
     <li>
       <input type="checkbox" data-index=${index} id=item${index} />
-
       <label for="item${index}">${plate.text}</label>
     </li>
     `;
+    // any instance of checked will
+    // make checked true, even if I type
+    // checked="false"
   }).join('');
 }
